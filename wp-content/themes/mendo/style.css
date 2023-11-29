@@ -1,0 +1,40 @@
+/*
+Theme Name: Mendo
+Author: SolicoWP
+Author URI: https://solicowp.com
+Theme URI: https://solicowp.com/themes/mendo
+Description: Mendo is a lightweight, full-site-editing theme for blogs and online magazines. It features a clean, minimalistic design and it contains custom templates, parts, and patterns. You can easily customize every part of the theme using the WordPress block editor. 
+Tags: full-site-editing, editor-style, block-styles, block-patterns, one-column, custom-colors, custom-menu, custom-logo, e-commerce, rtl-language-support, sticky-post, threaded-comments, translation-ready, featured-images, theme-options, blog, portfolio
+Text Domain: mendo
+Requires at least: 6.1
+Requires PHP: 7.4
+Tested up to: 6.2
+Version: 1.0.3
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/* Styles intended only for the front.*/
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}

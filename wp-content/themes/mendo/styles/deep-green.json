@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Deep Green",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#e1efe1",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#0a310a",
+					"name": "Foreground"
+				},
+				{
+					"slug": "primary",
+					"color": "#279027",
+					"name": "Primary"
+				},
+				{
+					"slug": "borders",
+					"color": "#b6b6b6",
+					"name": "Borders"
+				},
+				{
+					"slug": "light-gray",
+					"color": "#cde3cd",
+					"name": "Light Gray"
+				},
+				{
+					"slug": "overlay-text",
+					"color": "#ffffff",
+					"name": "Overlay text"
+				},				
+				{
+					"slug": "transparent",
+					"color": "transparent",
+					"name": "Transparent"
+				}
+			]
+		}
+	}
+}

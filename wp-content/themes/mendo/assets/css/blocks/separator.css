@@ -1,0 +1,8 @@
+.wp-block-separator {
+	opacity: 0.1;
+}
+
+footer hr,
+.is-mendo-transparent-header .wp-block-separator {
+	border-color: var(--wp--preset--color--white) !important;
+}

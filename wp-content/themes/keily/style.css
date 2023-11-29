@@ -1,0 +1,293 @@
+/*
+Theme Name: Keily
+Theme URI: 
+Author: templatesell
+Author URI: https://templatesell.com/
+Description: A WordPress Full Site Editing theme named Keily is designed to take full advantage of WordPress's Full Site Editing capabilities, providing users with extensive control over the entire website layout, design, and content. It enables users to customize and edit every aspect of their website, including headers, footers, sidebars, templates, and individual page elements, without the need for coding or advanced technical skills. The theme empowers users to create unique and visually stunning websites by offering a wide range of customizable blocks, templates, and styling options. With Keily, users can craft a personalized website that reflects their brand while ensuring a seamless and intuitive editing experience. Demo: https://templatesell.net/keily 
+Requires at least: 6.0
+Tested up to: 6.3
+Requires PHP: 5.6
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Tags: block-patterns, block-styles, blog, custom-background, custom-colors, custom-logo, custom-menu, editor-style, full-site-editing, grid-layout, one-column, photography, portfolio, template-editing, threaded-comments, translation-ready, wide-blocks
+Text Domain: keily
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #ffff;
+  height: 90px;
+  z-index: 999;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.admin-bar header {
+  position: relative;
+}
+
+.wp-block-social-link {
+  padding-bottom: initial;
+}
+
+.list_inner {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.list_inner:hover {
+  transform: translateY(-5px);
+}
+
+.is-hover-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.is-hover-image img {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.is-hover-image:hover img {
+  transform: scale(1.1);
+}
+
+.is-style-list-style-none {
+  list-style-type: none;
+}
+
+.is-style-post-terms-pill a {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 3px;
+  background: #eff0f2;
+  color: #5b6b79;
+  border-color: #eff0f2;
+  font-family: sans-serif;
+}
+
+
+input[type="submit"] {
+  transition: all ease 0.23s;
+  -o-transition: all ease 0.23s;
+  -moz-transition: all ease 0.23s;
+  -webkit-transition: all ease 0.23s;
+}
+
+form.comment-form {
+  border-radius: 20px;
+  margin-top: 24px;
+}
+
+.wp-block-post-comments-form {
+  border-radius: 20px;
+}
+
+form.comment-form input[type="email"],
+form.comment-form input[type="text"],
+form.comment-form input[type="url"],
+form.comment-form textarea {
+  border-radius: 5px;
+  border: 0;
+  margin: 12px 0 25px;
+}
+
+form.comment-form .form-submit.wp-block-button {
+  margin-top: 25px;
+}
+
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-textarea,
+.wpcf7-form-control.wpcf7-number.wpcf7-validates-as-number,
+.wpcf7-form-control.wpcf7-select {
+  border-radius: 4px;
+  font-size: 18px;
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.6;
+  padding: 20px;
+  height: 60px;
+  vertical-align: middle;
+  border: 1px solid #dedede;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  margin-bottom: 20px;
+}
+
+.wpcf7-form-control.wpcf7-textarea {
+  height: auto;
+}
+
+.wpcf7-form-control.wpcf7-select {
+  appearance: none;
+  position: relative;
+}
+
+.wpcf7-form-control.wpcf7-select:after {
+  content: ">";
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+form.wpcf7-form * {
+  font-family: sans-serif;
+}
+
+form.wpcf7-form *::placeholder {
+  font-size: 14px;
+}
+
+form.wpcf7-form *::-moz-placeholder {
+  font-size: 14px;
+}
+
+form.wpcf7-form *::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.wpcf7-form-control.has-spinner.wpcf7-submit {
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--white);
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+  background: var(--wp--preset--color--secondary);
+  color: var(--wp--preset--color--black);
+}
+
+.wp-block-comment-author-name {
+  font-weight: 600;
+}
+
+.wp-block-comment-date a {
+  color: var(--wp--preset--color--foregound);
+  font-size: 13px;
+}
+
+.wp-block-comment-template li {
+  margin-top: 50px;
+}
+
+.wp-block-comment-template li li {
+  margin-top: 10px;
+  padding-left: 60px;
+}
+
+a.comment-reply-link {
+  border: 1px solid;
+  padding: 5px 13px;
+  border-radius: 40px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.wp-block-post-comments-form {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+}
+
+/*===============================
+#### PAGINATIONS STYLE CSS #####
+=================================*/
+
+.pagination-style .wp-block-query-pagination,
+.pagination-style .wp-block-query-pagination-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  margin: 0;
+}
+
+.pagination-style.wp-block-query-pagination .page-numbers:not(.dots),
+.pagination-style.wp-block-query-pagination-numbers .page-numbers:not(.dots),
+.pagination-style.wp-block-query-pagination .wp-block-query-pagination-previous,
+.pagination-style.wp-block-query-pagination-numbers .wp-block-query-pagination-previous,
+.pagination-style.wp-block-query-pagination .wp-block-query-pagination-next,
+.pagination-style.wp-block-query-pagination-numbers .wp-block-query-pagination-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-style.wp-block-query-pagination .page-numbers,
+.pagination-style.wp-block-query-pagination-numbers .page-numbers {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.pagination-style .wp-block-query-pagination-next,
+.pagination-style .wp-block-query-pagination-previous {
+  border-radius: 6rem;
+  font-size: 1.125rem;
+  padding: 0.875rem 1.5rem;
+  line-height: 1;
+  margin: 0 10px;
+}
+
+.pagination-style.wp-block-query-pagination .page-numbers.dots,
+.pagination-style.wp-block-query-pagination-numbers .page-numbers.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-style.wp-block-query-pagination-numbers .page-numbers:not(.dots),
+.pagination-style.wp-block-query-pagination-numbers .wp-block-query-pagination-next,
+.pagination-style .wp-block-query-pagination-numbers .wp-block-query-pagination-previous,
+.pagination-style.wp-block-query-pagination .page-numbers:not(.dots),
+.pagination-style.wp-block-query-pagination .wp-block-query-pagination-next,
+.pagination-style.wp-block-query-pagination .wp-block-query-pagination-previous {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--black);
+  display: inline-block;
+  display: flex;
+  font-weight: 400;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.pagination-style.wp-block-query-pagination .page-numbers.current,
+.pagination-style.wp-block-query-pagination-numbers .page-numbers.current,
+.pagination-style.wp-block-query-pagination .page-numbers.current:hover,
+.pagination-style.wp-block-query-pagination-numbers .page-numbers.current:hover {
+  background-color: var(--wp--preset--color--primary);
+  border-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--white);
+}
+
+header+div {
+  margin-top: 0;
+}

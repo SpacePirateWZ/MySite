@@ -1,0 +1,23 @@
+<!-- wp:template-part {"slug":"header","theme":"keily"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group"
+	style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--70)">
+	<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|70","left":"var:preset|spacing|70"}}}} -->
+	<div class="wp-block-columns"><!-- wp:column {"width":"70%"} -->
+		<div class="wp-block-column" style="flex-basis:70%">
+			<!-- wp:template-part {"slug":"single","theme":"keily"} /-->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"width":"30%"} -->
+		<div class="wp-block-column" style="flex-basis:30%">
+			<!-- wp:template-part {"slug":"sidebar","theme":"keily"} /-->
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"keily"} /-->

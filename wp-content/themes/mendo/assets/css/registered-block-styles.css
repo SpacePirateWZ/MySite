@@ -1,0 +1,39 @@
+/*
+ * CSS for registered block styles.
+ * See inc/register-block-styles.php.
+ */
+
+/* Counter */
+.wp-block-post-template.is-style-mendo-counter {
+	counter-reset: loopCounter;
+}
+
+.wp-block-post-template.is-style-mendo-counter li figure {
+	position: relative;
+}
+
+.wp-block-post-template.is-style-mendo-counter li figure::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: var(--wp--preset--font-size--small);
+	counter-increment: loopCounter;
+	content: counters(loopCounter, ".") " ";
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	z-index: 15;
+	font-weight: 600;
+	background-color: var(--wp--preset--color--foreground);
+	color: var(--wp--preset--color--white);
+}
+
+/* Columns styles */
+.wp-block-columns.is-style-mendo-large-gap {
+	gap: 30px;
+}
+.wp-block-columns.is-style-mendo-extra-large-gap {
+	gap: 60px;
+}
